@@ -23,24 +23,25 @@ const createElement = (element, elClass, parent) => {
     return createdElement;
 }
 const boardCreator = (index = 0) => {
-    let currentLine = map[index];
 
+    let currentLine = map[index];
     if(index === map.length-1){
         return false;
     }
-    else {
-        let line = createElement('div', 'line', gameArea);
-        for(let i = 0; i < currentLine.length; i++){
-            let block = currentLine[i];
-            if(block === 'W'){
-                createElement('div', 'wall', line);
-            }
-            else if(block === 'S' || 'F'){
-                const element = createElement('div', 'path', line);
-                element.setAttribute('id', block);
-            }
+    let line = createElement('div', 'line', gameArea);
+    for(let i = 0; i < currentLine.length; i++){
+        let block = currentLine[i];
+        if(block === 'W'){
+            createElement('div', 'wall', line);
         }
-        boardCreator(index += 1);
+        else if(block === 'S' || block ==='F'){
+            const element = createElement('div', 'path', line);
+            element.setAttribute('id', block);
+        }
+        else {
+            createElement('div', 'path', line);
+        }
     }
+    boardCreator(index += 1);
 }
 boardCreator();
