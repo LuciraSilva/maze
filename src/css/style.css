@@ -1,0 +1,39 @@
+:root {
+    --first-color: #FFF;
+    --second-color: #000;
+    --third-color: red;
+}
+html, body, div, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    height: 100%;
+}
+.conteiner-game {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    display: flex;
+
+}
+.wall, .path {
+    width: 30px;
+    height: 30px;
+}
+.wall {
+    background-color: var(--second-color);
+}
+.path {
+    background-color: var(--third-color);
+    
+}
