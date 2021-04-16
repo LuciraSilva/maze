@@ -202,7 +202,7 @@ const activeMovEnemy = (condition) => {
 
 const playThemeSong = (char) => {
     const audio = document.createElement('audio');
-    audio.src = `public/assets/songs/${char}-theme.mp3`;
+    audio.src = `../assets/songs/${char}-theme.mp3`;
     document.body.appendChild(audio);
     audio.play();
 }
@@ -217,16 +217,16 @@ const chooseYourChar = (evt) => {
     modal.classList.add('char-selected');
 
     if(selected === 'wanda'){
-        modal.style.backgroundImage = 'url(../../public/assets/imagens/background-choose-char/wanda-selected.jpg)';
-        player.children[0].src = '../public/assets/imagens/game/wanda-game.png';
+        modal.style.backgroundImage = 'url(../assets/imagens/background-choose-char/wanda-selected.jpg)';
+        player.children[0].src = '../assets/imagens/game/wanda-game.png';
         player.children[0].alt = selected;
-        enemy.children[0].src = '../public/assets/imagens/game/agatha-game.png';
+        enemy.children[0].src = '../assets/imagens/game/agatha-game.png';
 
     } else {
-        modal.style.backgroundImage = 'url(../../public/assets/imagens/background-choose-char/vision-selected.jpg)';
-        player.children[0].src = '../public/assets/imagens/game/vision-game.png';
+        modal.style.backgroundImage = 'url(../assets/imagens/background-choose-char/vision-selected.jpg)';
+        player.children[0].src = '../assets/imagens/game/vision-game.png';
         player.children[0].alt = selected;
-        enemy.children[0].src = '../public/assets/imagens/game/white-vision-game.png';
+        enemy.children[0].src = '../assets/imagens/game/white-vision-game.png';
 
     }
     charSelected = selected;
