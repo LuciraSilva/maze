@@ -21,25 +21,14 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
-.buttons {
-    background-color: var(--second-color);
-    font-family: 'VT323', monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
-    border: none;
-    outline: none;
-    padding: 0.5rem 1.2rem;
-    font-weight: 700;
-    color: #FFF;
-
-}
 ul li, input[type='button'], button {
     cursor: pointer;
 }
 main {
     height: 100%;
 }
+
+
 
 .modal {
     background-color: var(--first-color);
@@ -54,10 +43,10 @@ main {
     10px 20px 40px 10px black;
 }
 .message {
-    text-shadow: 2px 2px 3px red;
+    text-shadow: 2px 2px 3px var(--second-color);
 }
 .modal h2 {
-    text-shadow: 5px 10px rgb(255, 61, 61);
+    text-shadow: 5px 10px rgb(209, 59, 59);
 }
 .modal,
 .modal__chooseChar  {
@@ -108,5 +97,17 @@ main {
     display: none;
 }
 .dynamic-background-red {
-    background-color: red;
+    background-color: var(--second-color);
+}
+.buttons {
+    background-color: var(--second-color);
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.2rem;
+    font-weight: 700;
+    color: #FFF;
+
 }
