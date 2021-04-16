@@ -2,28 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="src/css/style.css">
     <title>Labirinto</title>
 </head>
 <body>
     <div class="modal" id="modal">
-        <div class="login">
+        <div class="modal__chooseChar">
             <h2>Escolha seu personagem</h2>
-            <li>
-                <ul>
-                    <img src="" alt="">
-                </ul>
-                <ul>
-                    <img src="" alt="">
-                </ul>
-            </li>
+            <ul>
+                <li>
+                    <img src="public/assets/imagens/choose-char/wanda-choose-screen.png" alt="wanda">
+
+                </li>
+                <li>
+                    <img src="public/assets/imagens/choose-char/vision-choose-screen.png" alt="vision">
+
+                </li>
+            </ul>
+            <input type="button" value = 'Iniciar' class = 'buttons'>
         </div>
     </div>
     <main>
-        <section id = "conteiner-game" class = 'conteiner-game'>
-            <div id = 'player' class = 'player'></div>
+        <section id = "conteiner-game" class = 'conteiner-game hidden'>
+            <div id = 'player' class = 'player'>
+                <img>
+            </div>
+            <div id = 'enemy' class = 'enemy'>
+                <img>
+            </div>
         </section>
     </main>
     <script src="src/script/script.js"></script>
