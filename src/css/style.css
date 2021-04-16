@@ -13,6 +13,7 @@ body {
     background-image: url('../../assets/imagens/wallpaper.gif');
     background-position: bottom right;
     background-repeat: no-repeat;
+    background-size: 300px;
     background-color: var(--first-color);
     font-family: 'VT323', monospace;
     font-size: 62,5%;
@@ -87,6 +88,7 @@ main {
 }
 .conteiner-game__walls {
     background-color: var(--third-color);
+    box-shadow: 2px 2px 2px inset black;
 }
 .player img, .enemy img {
     width: 100%;
