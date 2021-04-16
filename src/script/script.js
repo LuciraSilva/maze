@@ -217,16 +217,16 @@ const chooseYourChar = (evt) => {
     modal.classList.add('char-selected');
 
     if(selected === 'wanda'){
-        modal.style.backgroundImage = 'url(../assets/imagens/background-choose-char/wanda-selected.jpg)';
-        player.children[0].src = '../assets/imagens/game/wanda-game.png';
+        modal.style.backgroundImage = 'url(../../assets/imagens/background-choose-char/wanda-selected.jpg)';
+        player.children[0].src = '../../assets/imagens/game/wanda-game.png';
         player.children[0].alt = selected;
         enemy.children[0].src = '../assets/imagens/game/agatha-game.png';
 
     } else {
-        modal.style.backgroundImage = 'url(../assets/imagens/background-choose-char/vision-selected.jpg)';
-        player.children[0].src = '../assets/imagens/game/vision-game.png';
+        modal.style.backgroundImage = 'url(../../assets/imagens/background-choose-char/vision-selected.jpg)';
+        player.children[0].src = '../../assets/imagens/game/vision-game.png';
         player.children[0].alt = selected;
-        enemy.children[0].src = '../assets/imagens/game/white-vision-game.png';
+        enemy.children[0].src = '../../assets/imagens/game/white-vision-game.png';
 
     }
     charSelected = selected;
