@@ -22,18 +22,22 @@ main {
     align-items: center;
     justify-content: center;
 }
-.line {
+.conteiner-game__lines {
     display: flex;
 
 }
-.wall, .path {
+.conteiner-game__walls, .conteiner-game__paths, .player {
     width: 30px;
     height: 30px;
 }
-.wall {
+.conteiner-game__walls {
     background-color: var(--second-color);
 }
-.path {
+.conteiner-game__paths {
     background-color: var(--third-color);
     
+}
+.player {
+    background-color: var(--first-color);
+    border: 2px solid green;
 }
