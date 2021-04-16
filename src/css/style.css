@@ -10,7 +10,7 @@ html, body, div, h1, h2, p, ul, li {
     list-style: none; 
 }
 body {
-    background-image: url('../../public/assets/imagens/wallpaper.gif');
+    background-image: url('../../assets/imagens/wallpaper.gif');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-color: var(--first-color);
